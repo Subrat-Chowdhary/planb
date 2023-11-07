@@ -4,7 +4,7 @@ const Portfolio = () => {
   return (
     <main className="bg-gray-900 text-white min-h-screen p-8">
       <section className="max-w-screen-xl mx-auto">
-        <h1 className="text-4xl font-semibold mb-4">Subrat's Creative Journey</h1>
+        <h1 className="text-4xl font-semibold mb-4">Subrat&apos;s Creative Journey</h1>
         <h2 className="text-xl text-opacity-80 mb-8">Tech Enthusiast & More</h2>
         <p className="text-lg mb-4">
           Welcome to my world of creativity and technology. I am Subrat, an
@@ -17,7 +17,7 @@ const Portfolio = () => {
         </p>
         <p className="text-lg mb-4">
           My latest adventure includes the world of Fullstack Development,
-          where I've mastered the art of Dot Net and Next.js, blending creativity
+          where I&apos;ve mastered the art of Dot Net and Next.js, blending creativity
           with technology.
         </p>
         <p className="text-lg">
