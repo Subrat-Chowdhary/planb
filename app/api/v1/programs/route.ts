@@ -7,7 +7,7 @@ export const GET = async (req:Request, res:Response) => {
         return NextResponse.json({message: "ok", programs}, {status: 200})
         
     } catch (error) {
-        console.log("[COURSES]", error);
+        console.log("[PROGRAMS]", error);
         return new NextResponse("Internal Error" + error);        
     }
 }
@@ -37,7 +37,7 @@ export async function POST(
        
 
     }catch(error){
-        console.log("[COURSES]", error);
+        console.log("[PROGRAMS]", error);
         return new NextResponse("Internal Error" + error);
     }
 }
