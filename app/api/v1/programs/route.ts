@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export const GET = async (req:Request, res:Response) => {
     try {
         const programs = await db.programs.findMany()
-        return NextResponse.json({message: "ok", programs}, {status: 200})
+        return NextResponse.json({programs}, {status: 200})
         
     } catch (error) {
         console.log("[PROGRAMS]", error);
