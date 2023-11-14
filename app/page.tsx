@@ -1,8 +1,10 @@
+
+import MyApp from '@/components/MyApp';
 import * as React from 'react';
 
 const Portfolio = () => {
   return (
-    <main className="bg-gray-900 text-white min-h-screen p-8">
+    <div className="bg-gray-900 text-white min-h-screen p-8">
       <section className="max-w-screen-xl mx-auto">
         <h1 className="text-4xl font-semibold mb-4"><span className='text-yellow-400 font-bold'>Subrat</span>&apos;s Creative Journey</h1>
         <h2 className="text-xl text-opacity-80 mb-8">Tech Enthusiast & More</h2>
@@ -24,7 +26,8 @@ const Portfolio = () => {
           Join me on this extraordinary journey where every day is a new act.
         </p>
       </section>
-    </main>
+      <MyApp/>
+    </div>
   );
 };
 
