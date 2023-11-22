@@ -39,7 +39,7 @@ const ProgramsTable: React.FC<ProgramsTableProps> = ({ data }) => {
         {/* Add any other filters or controls as needed */}
       </div>
       <div className="rounded-md border">
-        <Table>
+        <Table className='rounded-xl'>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>

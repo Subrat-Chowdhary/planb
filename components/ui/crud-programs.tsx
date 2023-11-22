@@ -23,7 +23,7 @@ const Programs = () => {
 
   useEffect(() => {
     fetchPrograms();
-  }, []);
+  }, [programs]);
 
   const onSubmit = async (data) => {
     try {
@@ -74,9 +74,8 @@ const Programs = () => {
 
   return (
     <div>
-      <h1>Programs</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="mb-4">
-        <div className="flex space-x-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 space-x-2">
           <div className="flex-1">
             <label htmlFor="title" className="block text-sm font-medium text-gray-700">
               Title:
@@ -95,9 +94,6 @@ const Programs = () => {
               required
             />
           </div>
-        </div>
-
-        <div className="flex space-x-4 mt-4">
           <div className="flex-1">
             <label htmlFor="startDate" className="block text-sm font-medium text-gray-700">
               Start Date:
@@ -122,9 +118,6 @@ const Programs = () => {
               required
             />
           </div>
-        </div>
-
-        <div className="flex space-x-4 mt-4">
           <div className="flex-1">
             <label htmlFor="price" className="block text-sm font-medium text-gray-700">
               Price:
@@ -139,13 +132,11 @@ const Programs = () => {
             />
           </div>
         </div>
-
-        <button type="submit" className="mt-4 bg-blue-500 text-white p-2 rounded">
-          <AiOutlinePlus className="inline-block mr-2" /> Add Program
+        <button type="submit" className="mt-4 bg-blue-500 text-white p-2 rounded-full">
+          <AiOutlinePlus className="inline-block mr-1" /> Add Program
         </button>
       </form>
 
-      {/* Rest of the code... */}
     </div>
   );
 };

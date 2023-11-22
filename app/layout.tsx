@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 
 import '@radix-ui/themes/styles.css';
 import './globals.css'
-import { Theme } from '@radix-ui/themes';
+import { Theme, ThemePanel } from '@radix-ui/themes';
 import Navbar from '@/components/NavbarRoute';
 import { ThemeProvider } from '@/components/theme-provider';
 
@@ -30,7 +30,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Theme accentColor='amber'>
+            <Theme accentColor='amber' className='p-2'>
               <Navbar/>
               {children}
             </Theme>

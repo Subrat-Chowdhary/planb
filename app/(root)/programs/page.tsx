@@ -89,7 +89,7 @@ const ProgramsPage: React.FC = () => {
     <div>
       <h1>This is programs Page</h1>
       <Programs/>
-      {/* <ProgramsTable data={programData} /> */}
+      <ProgramsTable data={programData} />
     </div>
   );
 };
